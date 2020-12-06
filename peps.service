@@ -4,6 +4,7 @@ Documentation=https://github.com/ckateraas/envirophat
 
 [Service]
 ExecStart=/usr/local/bin/peps
+Restart=on-failure
 
 [Install]
 WantedBy=default.target
