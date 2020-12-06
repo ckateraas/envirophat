@@ -1,0 +1,9 @@
+[Unit]
+Description=Prometheus endpoint for EnviroPHAT stats
+Documentation=https://github.com/ckateraas/envirophat
+
+[Service]
+ExecStart=/usr/local/bin/peps
+
+[Install]
+WantedBy=default.target
