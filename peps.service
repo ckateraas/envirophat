@@ -4,6 +4,7 @@ Documentation=https://github.com/ckateraas/envirophat
 
 [Service]
 ExecStart=/usr/local/bin/peps
+User=pi
 Restart=on-failure
 
 [Install]

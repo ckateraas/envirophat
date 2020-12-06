@@ -35,16 +35,13 @@ nstall --target-directory=/usr/local/bin peps.py
 ## systemd service file
 
 This repo includes a `.service` file which tells systemd how to manage the process.
-Add the serivce file, `peps.service`, in `~/.config/systemd/user/ .
+Add the serivce file, `peps.service`, in `/etc/systemd/system/ .
 Then start the service:
 
 ```sh
-systemctl --user enable peps
-systemctl --user start --now peps
+systemctl enable peps
+systemctl start --now peps
 ```
-
-_Use `systemctl` as usual, with `start`, `status`, etc, just add `--user`._
-
 ## Metrics endpoint
 
 You can now view the metrics on `<RPi Zero IP>:8000`.
